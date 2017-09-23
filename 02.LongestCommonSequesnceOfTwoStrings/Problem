@@ -1,0 +1,15 @@
+Find the longest common sequence between two strings.
+
+Input:
+Two strings S1 and S2.
+
+Output:
+Print the longest common sequence.
+
+Example:
+Input:
+abadeckf
+bdklfecf
+
+Output:
+bdecf
