@@ -1,0 +1,49 @@
+Consider that there is a associative number with the alphabet as below :
+A - 1
+B - 2
+C - 3
+...
+...
+J - 10
+...
+...
+X - 24
+Y - 25
+Z - 26
+
+Here, 26 can also be treated as BF (26 - BF) apart from Z. Zero should be treated as empty so 10 can be treated as J as well as A(10 - A).
+Given a numeric string. There can be many decryption possible for this string. You should output the total number of possible decryption. 
+
+INPUT :
+S : numeric string
+0 < length(S) < 10^5
+
+OUTPUT :
+Number of possible decryption
+
+NOTE : Alphabets are not case sensitive.
+
+EXAMPLE :
+1. 
+INPUT :
+1221
+
+OUTPUT :
+5
+
+EXPLANATION :
+Possible decryption : {ABU, LU, ALA, ABBA, LBA}
+For the ABU : 1 2 21 = A B U (21 becomes U)
+
+1. 
+INPUT :
+1001
+
+OUTPUT :
+3
+
+EXPLANATION :
+Possible decryption : {AA, JA, K}
+For the ABU : 1001 = AA (0 is treated as empty)
+			  10 0 1 = JA (0 is treated as empty)
+			  1001 = K (0 is treated as empty, 11 becomes K)
